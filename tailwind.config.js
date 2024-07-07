@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./projects/angular-library-starter-showcase/**/*.{html,ts}'],
+  content: ['./projects/mk-core-showcase/**/*.{html,ts}'],
   theme: {
     extend: {},
   },

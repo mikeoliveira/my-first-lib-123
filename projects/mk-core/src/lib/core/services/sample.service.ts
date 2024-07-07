@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 @Injectable({
   providedIn: 'root',
 })
-export class AngularLibraryStarterSampleService {
+export class MkCoreSampleService {
   public getBestFramework(): string {
     return 'Angular';
   }

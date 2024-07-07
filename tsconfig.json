@@ -13,7 +13,7 @@
     "noFallthroughCasesInSwitch": true,
     "sourceMap": true,
     "paths": {
-      "angularLibraryStarter": ["dist/angular-library-starter"]
+      "mkCore": ["dist/mk-core"]
     },
     "declaration": false,
     "experimentalDecorators": true,

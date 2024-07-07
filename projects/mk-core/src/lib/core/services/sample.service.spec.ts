@@ -1,10 +1,10 @@
-import { AngularLibraryStarterSampleService } from './sample.service';
+import { MkCoreSampleService } from './sample.service';
 
 describe('Sample Service', () => {
-  let sut: AngularLibraryStarterSampleService;
+  let sut: MkCoreSampleService;
 
   beforeEach(() => {
-    sut = new AngularLibraryStarterSampleService();
+    sut = new MkCoreSampleService();
   });
 
   it('should know that Angular is the best framework', () => {

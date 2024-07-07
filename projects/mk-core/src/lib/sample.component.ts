@@ -1,15 +1,15 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 
-import { AngularLibraryStarterSampleService } from './sample.service';
+import { MkCoreSampleService } from './core/services/sample.service';
 
 @Component({
-  selector: 'angular-library-starter-sample',
+  selector: 'mk-core-sample',
   template: `<h1>
     The best framework is {{ sampleService.getBestFramework() }}
   </h1>`,
   standalone: true,
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class AngularLibraryStarterSampleComponent {
-  constructor(public sampleService: AngularLibraryStarterSampleService) {}
+export class MkCoreSampleComponent {
+  constructor(public sampleService: MkCoreSampleService) {}
 }

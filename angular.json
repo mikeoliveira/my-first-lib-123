@@ -3,23 +3,23 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angularLibraryStarter": {
+    "mkCore": {
       "projectType": "library",
-      "root": "projects/angular-library-starter",
-      "sourceRoot": "projects/angular-library-starter/src",
+      "root": "projects/mk-core",
+      "sourceRoot": "projects/mk-core/src",
       "prefix": "lib",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
-            "project": "projects/angular-library-starter/ng-package.json"
+            "project": "projects/mk-core/ng-package.json"
           },
           "configurations": {
             "production": {
-              "tsConfig": "projects/angular-library-starter/tsconfig.lib.prod.json"
+              "tsConfig": "projects/mk-core/tsconfig.lib.prod.json"
             },
             "development": {
-              "tsConfig": "projects/angular-library-starter/tsconfig.lib.json"
+              "tsConfig": "projects/mk-core/tsconfig.lib.json"
             }
           },
           "defaultConfiguration": "production"
@@ -27,43 +27,39 @@
         "test": {
           "builder": "@angular-builders/jest:run",
           "options": {
-            "tsConfig": "projects/angular-library-starter/tsconfig.spec.json"
+            "tsConfig": "projects/mk-core/tsconfig.spec.json"
           }
         }
       }
     },
-    "angularLibraryStarterShowcase": {
+    "mkCoreShowcase": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
           "style": "scss"
         }
       },
-      "root": "projects/angular-library-starter-showcase",
-      "sourceRoot": "projects/angular-library-starter-showcase/src",
+      "root": "projects/mk-core-showcase",
+      "sourceRoot": "projects/mk-core-showcase/src",
       "prefix": "app",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
             "outputPath": {
-              "base": "dist/angular-library-starter-showcase"
+              "base": "dist/mk-core-showcase"
             },
-            "index": "projects/angular-library-starter-showcase/src/index.html",
-            "polyfills": [
-              "projects/angular-library-starter-showcase/src/polyfills.ts"
-            ],
-            "tsConfig": "projects/angular-library-starter-showcase/tsconfig.app.json",
+            "index": "projects/mk-core-showcase/src/index.html",
+            "polyfills": ["projects/mk-core-showcase/src/polyfills.ts"],
+            "tsConfig": "projects/mk-core-showcase/tsconfig.app.json",
             "inlineStyleLanguage": "scss",
             "assets": [
-              "projects/angular-library-starter-showcase/src/favicon.ico",
-              "projects/angular-library-starter-showcase/src/assets"
+              "projects/mk-core-showcase/src/favicon.ico",
+              "projects/mk-core-showcase/src/assets"
             ],
-            "styles": [
-              "projects/angular-library-starter-showcase/src/styles.scss"
-            ],
+            "styles": ["projects/mk-core-showcase/src/styles.scss"],
             "scripts": [],
-            "browser": "projects/angular-library-starter-showcase/src/main.ts"
+            "browser": "projects/mk-core-showcase/src/main.ts"
           },
           "configurations": {
             "production": {
@@ -81,8 +77,8 @@
               ],
               "fileReplacements": [
                 {
-                  "replace": "projects/angular-library-starter-showcase/src/environments/environment.ts",
-                  "with": "projects/angular-library-starter-showcase/src/environments/environment.prod.ts"
+                  "replace": "projects/mk-core-showcase/src/environments/environment.ts",
+                  "with": "projects/mk-core-showcase/src/environments/environment.prod.ts"
                 }
               ],
               "outputHashing": "all"
@@ -100,10 +96,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "angularLibraryStarterShowcase:build:production"
+              "buildTarget": "mkCoreShowcase:build:production"
             },
             "development": {
-              "buildTarget": "angularLibraryStarterShowcase:build:development"
+              "buildTarget": "mkCoreShowcase:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -111,20 +107,18 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "angularLibraryStarterShowcase:build"
+            "buildTarget": "mkCoreShowcase:build"
           }
         },
         "test": {
           "builder": "@angular-builders/jest:run",
           "options": {
-            "tsConfig": "projects/angular-library-starter-showcase/tsconfig.spec.json",
+            "tsConfig": "projects/mk-core-showcase/tsconfig.spec.json",
             "assets": [
-              "projects/angular-library-starter-showcase/src/favicon.ico",
-              "projects/angular-library-starter-showcase/src/assets"
+              "projects/mk-core-showcase/src/favicon.ico",
+              "projects/mk-core-showcase/src/assets"
             ],
-            "styles": [
-              "projects/angular-library-starter-showcase/src/styles.scss"
-            ],
+            "styles": ["projects/mk-core-showcase/src/styles.scss"],
             "scripts": []
           }
         }

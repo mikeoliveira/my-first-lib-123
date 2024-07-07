@@ -1,5 +1,5 @@
 {
-  "pkgRoot": "dist/angular-library-starter",
+  "pkgRoot": "dist/mk-core",
   "branches": ["main"],
   "plugins": [
     "@semantic-release/commit-analyzer",
