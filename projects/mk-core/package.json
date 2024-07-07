@@ -1,5 +1,5 @@
 {
-  "name": "mk-core",
+  "name": "@mike-oliveira-costa/core",
   "version": "1.0.0",
   "peerDependencies": {
     "@angular/common": "^15.0.4",
@@ -8,5 +8,20 @@
   },
   "dependencies": {
     "tslib": "^2.3.0"
-  }
+  },
+  "description": "retomando os estudos por library",
+  "main": "jest.config.js",
+  "scripts": {
+    "test": "npm run test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mikeoliveira/my-first-lib-123.git"
+  },
+  "author": "Mike Costa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mikeoliveira/my-first-lib-123/issues"
+  },
+  "homepage": "https://github.com/mikeoliveira/my-first-lib-123#readme"
 }
