@@ -1,4 +1,4 @@
 /*
  * Public API Surface of mk-core
  */
-export * from './lib/core/services/sample.service';
+export * from './lib/sample.component';
