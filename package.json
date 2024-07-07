@@ -32,6 +32,7 @@
     "@angular/platform-browser": "^18.0.4",
     "@angular/platform-browser-dynamic": "^18.0.4",
     "@angular/router": "^18.0.4",
+    "@mike-oliveira-costa/core": "^1.0.0",
     "rxjs": "~7.5.0",
     "tslib": "^2.3.0",
     "zone.js": "~0.14.4"
